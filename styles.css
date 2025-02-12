@@ -1,4 +1,4 @@
-/* Global Styles */
+/* General Style */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +12,8 @@ body {
     color: #333;
     transition: background-color 0.3s, color 0.3s;
 }
+
+ 
 
 /* Dark Mode */
 body.dark-mode {
@@ -29,11 +31,12 @@ body.dark-mode {
     position: sticky;
     top: 0;
     z-index: 1000;
+    
 }
 
 .navbar .logo {
     font-size: 1.5rem;
-    color: #ee0a0a;
+    color: #cecece;
     font-weight: bold;
 }
 
@@ -41,6 +44,7 @@ body.dark-mode {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    margin-right: -45%;
 }
 
 .nav-links a {
@@ -63,7 +67,9 @@ body.dark-mode {
 }
 
 /* Hero Section */
-.hero-section {
+
+
+/*.hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,6 +78,26 @@ body.dark-mode {
     background: linear-gradient(135deg, #6200ea, #89888b);
     color: #fff;
     text-align: center;
+}*/
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #6200ea, #89888b);
+    color: #fff;
+    text-align: center;
+
+}
+
+.section_picture-container{
+    padding-right: 400px;
+}
+img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;   
 }
 
 .hero-section h1 {
@@ -228,4 +254,59 @@ footer .socials a:hover {
     .navbar.active .nav-links {
         display: flex;
     }
+}
+
+.contact-section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
 }

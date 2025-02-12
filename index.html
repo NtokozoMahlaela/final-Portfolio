@@ -9,9 +9,11 @@
 </head>
 <body>
     <!-- Header Section -->
+     
     <header>
         <nav class="navbar">
             <div class="logo">Ntokozo Mahlaela</div>
+            
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -20,19 +22,83 @@
             </ul>
             <button class="theme-toggle">🌙</button>
         </nav>
+        
     </header>
 
     <!-- Home Section -->
+
+    <!--<section id="profile">
+        <div class="section_picture-container">
+            <img src="/Images/N1.jpg" alt="Ntokozo Mahlaela">
+        </div>
+    </section>-->
+
     <section id="home" class="hero-section">
-        <h1>Hi, I'm Ntokozo Mahlaela</h1>
-        <p>Software Developer</p>
-        <button onclick="downloadCV()">Download CV</button>
+
+        <div class="section_picture-container">
+            <img src="/Images/N1.jpg" alt="Ntokozo Mahlaela" width="
+            200" height="200">
+        </div>
+
+        <div class="hero-content">
+            <h1>Hi, I'm Ntokozo Mahlaela</h1>
+            <p>Software Developer</p>
+            <!-- Download CV Button -->
+<a href="./CV/Ntokozo Mahlaela CV.pdf" download="Ntokozo_Mahlaela_CV.pdf" class="download-btn">📄 Download My CV</a>
+
+<!-- CSS Styling -->
+<style>
+  .download-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .download-btn:hover {
+    background: linear-gradient(135deg, #66BB6A, #1B5E20);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .download-btn::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  .download-btn:hover::after {
+    transform: translateY(-50%) translateX(5px);
+  }
+</style>
+
+
+
+        </div>
+        
+        
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="about-section">
         <h2>About Me</h2>
-        <p>I’m a creative and detail-oriented software developer with a passion for building impactful digital experiences.</p>
+        <p>Hi, I’m Ntokozo Mahlaela, a passionate and results-driven software developer with a strong background in Information Technology Management. I specialize in crafting innovative, user-centric web applications using HTML, CSS, JavaScript, and modern frameworks. My focus is on building clean, responsive, and dynamic solutions that not only meet but exceed user expectations.
+
+            With a sharp eye for detail and a love for solving complex problems, I’m always exploring new technologies to stay ahead in the ever-evolving tech landscape. I thrive in collaborative environments, where I can contribute my skills in software development, web development, Cloud Technologies, and data analytics to create impactful digital experiences.
+            
+            Beyond coding, I’m passionate about continuous learning, growth, and pushing the boundaries of what technology can achieve. Feel free to explore my projects, download my CV, or even start a chat—I’d love to connect!</p>
     </section>
 
     <!-- Projects Section -->
@@ -40,6 +106,7 @@
         <h2>Projects</h2>
         <div class="project-gallery">
             <div class="project-card">
+                    
                 <h3>Project 1</h3>
                 <p>Project description goes here.</p>
                 <a href="#" target="_blank">View Project</a>
@@ -55,16 +122,30 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
-        <div class="chat-box">
-            <div class="chat-header">Chat with Me</div>
-            <div class="chat-body" id="chat-body"></div>
-            <div class="chat-input">
-                <input type="text" id="chat-message" placeholder="Type your message...">
-                <button onclick="sendMessage()">Send</button>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
-        </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
     </section>
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Ntokozo Mahlaela. All Rights Reserved.</p>
