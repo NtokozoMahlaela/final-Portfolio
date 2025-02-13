@@ -80,6 +80,13 @@ body.dark-mode {
     height: 24px;
 }
 
+/* Soft skills */
+
+.skill:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.4);
+}
+
 .theme-toggle {
     background: none;
     border: none;
