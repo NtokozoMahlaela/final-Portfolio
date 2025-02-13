@@ -29,42 +29,75 @@ body.dark-mode {
 
 
 
-/* Navbar */
+/* General header styles */
+header {
+    background: linear-gradient(135deg, #6200ea, #ffcc40);
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #6200ea;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
-    color: #cecece;
+.logo {
+    font-size: 24px;
     font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #cdd8dfcb;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
-    margin-right: -45%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
 }
 
 .nav-links a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
+    font-size: 18px;
     font-weight: 500;
-    transition: color 0.3s;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #ffab00;
+    color: #ff8640;
+    transform: translateY(-3px);
 }
+
+/* Theme toggle button */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #ff4081;
+}
+
+
 
 
 
