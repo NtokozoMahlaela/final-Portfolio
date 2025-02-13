@@ -59,10 +59,12 @@ body.dark-mode {
 }
 
 
+
 .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+    
 }
 .skill {
     background-color: white;
@@ -247,16 +249,6 @@ footer {
     padding: 20px 0;
 }
 
-footer .socials a {
-    color: #ffab00;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-footer .socials a:hover {
-    color: #ffd54f;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
