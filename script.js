@@ -10,7 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
         themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
     });
     
-    
+    // Download CV Function
+    function downloadCV() {
+        const link = document.createElement('a');
+        link.href = './'; // Add your actual CV file here
+        link.download = 'Ntokozo_Mahlaela_CV.pdf';
+        link.click();
+    }
     
     // Chat Functionality
     function sendMessage() {
