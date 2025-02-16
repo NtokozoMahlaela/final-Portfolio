@@ -335,7 +335,7 @@ img{
     vertical-align: top;
     padding: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: px;
     margin: 10px;
 }
 .contact-form {
@@ -355,6 +355,44 @@ img{
 }
 .submit-btn:hover {
     background-color: #0056b3;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-link i {
+    font-size: 28px;
+}
+
+.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.github {
+    background-color: #333;
+    color: white;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 /* Footer */
 footer {
