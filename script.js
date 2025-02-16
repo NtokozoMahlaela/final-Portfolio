@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const typingElement = document.querySelector(".typing");
-    const roles = ["Software Developer", "Web Designer", "Tech Enthusiast"];
+    const roles = ["Software Developer", "Web Designer", ];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;// Dark Mode Toggle
@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Download CV Function
     function downloadCV() {
         const link = document.createElement('a');
-        link.href = './'; // Add your actual CV file here
-        link.download = 'Ntokozo_Mahlaela_CV.pdf';
+        link.href = './'; 
+        link.download = 'C:\Users\Ntokozo\Downloads\Portfolio-main\final-Portfolio\CV\Ntokozo Mahlaela CV.pdf';
         link.click();
     }
     
