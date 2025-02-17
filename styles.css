@@ -95,24 +95,16 @@ header {
     color: #ff4081;
 }
 
-/* Education/Experience Section  */
+/* Education */
 .education-section {
     padding: 60px 20px;
     background: #f9f9f9;
     text-align: center;
 }
 
-.education-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
 .education-card {
-    background: #fff;
+    background: #ec7070;
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s;
 }
@@ -121,10 +113,47 @@ header {
     transform: translateY(-10px);
 }
 
-.educationexperience-card h3 {
-    color: #3700b3;
+.education-card h3 {
+    color: #f3f1f7;
 }
 
+.education-section p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f0edf3;
+}
+
+/* experience */
+.experience-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.experience-card {
+    background: #163d79;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+}
+
+.experience-card h3 {
+    color: #f4f3f7;
+}
+
+.education-card img, .experience-card img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 200px;
+}
 
 /* Skills Section */
 .skills {
@@ -148,10 +177,10 @@ header {
 
 /* Increase icon size and add a hover effect */
 .skills .skill img {
-    width: 60px;        /* Adjust width as needed */
-    height: auto;       /* Maintain the image's aspect ratio */
-    transition: transform 0.3s ease;  /* Smooth transition for hover effect */
-    margin-bottom: 10px; /* Optional: space between icon and text */
+    width: 60px;        
+    height: auto;       
+    transition: transform 0.3s ease;  
+    margin-bottom: 10px; 
 }
 
 /* Optional: scale up icon slightly on hover */
@@ -163,7 +192,7 @@ header {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;      /* Space between each skill item */
+    gap: 1.5rem;      
     justify-content: center; /* Center align all skill items */
 }
 
