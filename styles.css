@@ -27,8 +27,6 @@ body.dark-mode {
     color: #1d1b1b;
 }
 
-
-
 /* General header styles */
 header {
     background: linear-gradient(135deg, #6200ea, #ffcc40);
@@ -97,15 +95,11 @@ header {
     color: #ff4081;
 }
 
-
-
-
-
+/* Skills Section */
 .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    
 }
 .skill {
     background-color: white;
@@ -121,28 +115,85 @@ header {
     height: 24px;
 }
 
-/* Soft skills */
+/* Increase icon size and add a hover effect */
+.skills .skill img {
+    width: 60px;        /* Adjust width as needed */
+    height: auto;       /* Maintain the image's aspect ratio */
+    transition: transform 0.3s ease;  /* Smooth transition for hover effect */
+    margin-bottom: 10px; /* Optional: space between icon and text */
+}
 
+/* Optional: scale up icon slightly on hover */
+.skills .skill:hover img {
+    transform: scale(1.1);
+}
+
+/* Optional: add some styling to the container for a neat layout */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;      /* Space between each skill item */
+    justify-content: center; /* Center align all skill items */
+}
+
+.skills .skill {
+    text-align: center; /* Center the text below the icon */
+    font-size: 1rem;
+}
+
+.skills-section h2 {
+    text-align: center;
+}
+
+/* Soft skills */
 .skill:hover {
     transform: scale(1.05);
     background: rgba(255, 255, 255, 0.4);
 }
 
+.skills-section soft-skills h2{
+    text-align: center;
+}
 
+h2 {
+  text-align: center;
+}
+
+/* Container layout */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+  
+/* Style each skill item */
+.skills-container .skill {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Change to your desired font */
+    font-size: 1.1rem;               /* Adjust font size as needed */
+    color: #333;                     /* Text color */
+    background: #f2f2f2;             /* Light background for contrast */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+  
+/* Hover effect for skill items */
+.skills-container .skill:hover {
+    background: #e0e0e0;
+}
+  
+/* Increase icon size and add spacing */
+.skills-container .skill i {
+    font-size: 2rem;      /* Increase icon size */
+    margin-right: 0.5rem;  /* Space between icon and text */
+    color: #007acc;       /* Icon color, adjust as needed */
+}
 
 /* Hero Section */
-
-
-/*.hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #6200ea, #89888b);
-    color: #fff;
-    text-align: center;
-}*/
 .hero-section {
     display: flex;
     flex-direction: row;
@@ -152,7 +203,6 @@ header {
     background: linear-gradient(135deg, #6200ea, #89888b);
     color: #fff;
     text-align: center;
-
 }
 
 .section_picture-container{
@@ -201,6 +251,32 @@ img{
     color: #6200ea;
 }
 
+/* Container styling */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+  
+/* About section heading */
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+  
+/* About section paragraph */
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+}
+
 /* Projects Section */
 .projects-section {
     padding: 60px 20px;
@@ -236,17 +312,17 @@ img{
     padding: 60px;
     background: linear-gradient(135deg, #f4f4f4, #e9ecef);
     animation: fadeIn 1.2s ease-in-out;
-  }
+}
   
-  .certificates h2 {
+.certificates h2 {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 40px;
     color: #333;
     animation: slideDown 1s ease-in-out;
-  }
+}
   
-  .certificate-grid {
+.certificate-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
@@ -254,9 +330,9 @@ img{
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1.2s ease-in-out forwards;
-  }
+}
   
-  .certificate-item {
+.certificate-item {
     background: white;
     border: 1px solid #ddd;
     padding: 25px;
@@ -266,37 +342,37 @@ img{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
-  }
+}
   
-  .certificate-item:hover {
+.certificate-item:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
+}
   
-  .certificate-item img {
+.certificate-item img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-  }
+}
   
-  .certificate-item:hover img {
+.certificate-item:hover img {
     transform: scale(1.05);
-  }
+}
   
-  .certificate-item h3 {
+.certificate-item h3 {
     font-size: 1.6em;
     margin-top: 15px;
     color: #222;
-  }
+}
   
-  .certificate-item p {
+.certificate-item p {
     font-size: 1.1em;
     color: #555;
     margin-top: 10px;
-  }
+}
   
-  .certificate-item a {
+.certificate-item a {
     display: inline-block;
     margin-top: 15px;
     padding: 12px 25px;
@@ -305,28 +381,27 @@ img{
     text-decoration: none;
     border-radius: 6px;
     transition: background 0.3s ease-in-out, transform 0.2s;
-  }
+}
   
-  .certificate-item a:hover {
+.certificate-item a:hover {
     background: #0056b3;
     transform: scale(1.1);
-  }
+}
   
-  @keyframes fadeIn {
+@keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-  }
+}
   
-  @keyframes slideDown {
+@keyframes slideDown {
     from { transform: translateY(-20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
-  }
+}
   
-  @keyframes fadeInUp {
+@keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
-  }
-  
+}
 
 /* Contact Section */
 .contact-section {
@@ -335,7 +410,6 @@ img{
     vertical-align: top;
     padding: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: px;
     margin: 10px;
 }
 .contact-form {
@@ -394,6 +468,7 @@ img{
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 /* Footer */
 footer {
     background: #3700b3;
@@ -402,10 +477,7 @@ footer {
     padding: 20px 0;
 }
 
-
-
-
-    /* General styles for larger screens */
+/* General styles for larger screens */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -452,6 +524,28 @@ body {
         position: absolute;
         top: 20px;
         right: 20px;
+    }
+
+    /* Hero Section: Stack items vertically */
+    .hero-section {
+        flex-direction: column;
+        padding: 50px 20px; /* Reduced padding for smaller screens */
+    }
+    .section_picture-container {
+        padding-right: 0; /* Remove extra right padding on mobile */
+        margin-bottom: 20px; /* Add spacing between image and text */
+    }
+    img{
+        width: 200px;  /* Scale down images on mobile */
+        height: 200px;
+    }
+
+    /* Contact Section: Use full width */
+    .contact-section {
+        width: 100%;
+        display: block;
+        padding: 20px;
+        margin: 10px 0;
     }
 }
 
