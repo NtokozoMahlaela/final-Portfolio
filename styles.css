@@ -463,6 +463,8 @@ img{
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Interest Section */
+
 /* Contact Section */
 .contact-section {
     width: 45%;
@@ -471,13 +473,18 @@ img{
     padding: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 10px;
+    margin-right: 4.2%;
+    
 }
+
 .contact-form {
     display: flex;
     flex-direction: column;
+    
 }
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 41px;
+    width: 56%;
 }
 .submit-btn {
     background-color: #007bff;
@@ -505,7 +512,7 @@ img{
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 12px 50px;
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
 }
@@ -533,8 +540,9 @@ img{
 footer {
     background: #3700b3;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    text-align: bottom;
+    padding: 5px 0;
+    position: float;
 }
 
 /* General styles for larger screens */
