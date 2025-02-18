@@ -635,13 +635,22 @@ img{
 }
  */
 /* Footer */
-footer {
-    background: #3700b3;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  footer {
+    background: #222;
     color: #fff;
-    text-align: bottom;
-    padding: 5px 0;
-    position: float;
-}
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+  }
+  
 
 /* General styles for larger screens */
 body {
