@@ -93,7 +93,7 @@ function generateBotResponse(input) {
     if (input.includes("cv")) return "You can download my CV from the homepage.";
     if (input.includes("education")) return "Rosebank College - Diploma in Information Technology.";
     if (input.includes("experience")) return "I have worked as a Software Developer at a CAPACITI 2025.";
-    if (input.includes("skills")) return "I am skilled in JavaScript, Java, HTML, CSS, Python, and MySQL.";
+    if (input.includes("skills")) return "He is skilled in JavaScript, Java, HTML, CSS, Python, and MySQL.";
     if (input.includes("interests")) return "I am interested in web development, software development, and artificial intelligence.";
     if (input.includes("hobbies")) return "I enjoy playing chess, coding, and and going to the gym.";
     if (input.includes("certificates")) return "I have completed the Introduction to AI Certificate and Building AI Powered Chatbots Without Programming.I have also completed the Generative AI: Introduction and Applications and Generative AI: Prompt Engineering Basics .You can view my certificates in the Certificates section.";
